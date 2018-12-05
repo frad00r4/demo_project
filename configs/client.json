@@ -1,0 +1,6 @@
+{
+  "mode":"client",
+  "dispatcher_post":8000,
+  "dispatcher_address":"127.0.0.1",
+  "task_send_timeout": 30
+}

@@ -1,0 +1,10 @@
+{
+  "mode":"worker",
+  "listen_port":8004,
+  "process_emulation_min":5,
+  "process_emulation_max":10,
+  "dispatcher_address":"127.0.0.1",
+  "dispatcher_port":8000,
+  "die_chance":5,
+  "die_timeout":20
+}
