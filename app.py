@@ -9,11 +9,14 @@ from demo.main import runner
 
 
 def main():
+    # Use simple argc/argv method because command parser
+    # for python 2.7 and for python 2.6 is different
     if len(sys.argv) < 2:
         return 2
 
     dir_path = os.path.dirname(os.path.realpath(__file__))
     try:
+        # Read config and start application
         with open('%s/configs/%s.json' % (dir_path, sys.argv[1]), 'r') as fd:
             conf = ujson.load(fd)
             return runner(conf)
